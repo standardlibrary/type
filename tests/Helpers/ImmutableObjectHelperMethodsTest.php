@@ -32,7 +32,7 @@ final class ImmutableObjectHelperMethodsTest extends TestCase
     {
         $object = $this->getMockForTrait(ImmutableObjectHelperMethods::class);
 
-        $object->foo = 'test';
+        $object->__set('foo', 'test');
     }
 
     /**
@@ -48,6 +48,6 @@ final class ImmutableObjectHelperMethodsTest extends TestCase
     {
         $object = $this->getMockForTrait(ImmutableObjectHelperMethods::class);
 
-        unset($object->foo);
+        $object->__unset('foo');
     }
 }

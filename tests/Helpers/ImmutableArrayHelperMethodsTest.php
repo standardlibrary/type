@@ -32,7 +32,7 @@ final class ImmutableArrayHelperMethodsTest extends TestCase
     {
         $object = $this->getMockForTrait(ImmutableArrayHelperMethods::class);
 
-        $object['foo'] = 'test';
+        $object->offsetSet('foo', 'test');
     }
 
     /**
@@ -48,6 +48,6 @@ final class ImmutableArrayHelperMethodsTest extends TestCase
     {
         $object = $this->getMockForTrait(ImmutableArrayHelperMethods::class);
 
-        unset($object['foo']);
+        $object->offsetUnset('foo');
     }
 }
