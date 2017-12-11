@@ -2,7 +2,7 @@
   "name": "standardlibrary/type",
   "description": "Building block base classes for PHP objects",
   "type": "library",
-  "keywords": ["php", "string", "casts"],
+  "keywords": ["php", "building-block", "immutable"],
   "homepage": "https://github.com/standardlibrary",
   "license": "GPL-3.0",
   "authors": [
@@ -33,6 +33,6 @@
        }
    },
    "replace": {
-     "simondeeley/cast-to-string": "*"
+     "simondeeley/type": "*"
    }
 }
